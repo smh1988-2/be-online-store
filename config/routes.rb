@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :show] 
   resources :categories, only: [:index, :show]
   resources :purchases, only: [:create]
+  resources :users, only: [:create]
+
+  post '/login', to: 'auth#create'
+  
 end

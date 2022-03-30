@@ -5,9 +5,10 @@ class CategoriesController < ApplicationController
         render json: categories, status: :ok
     end
 
-    def show
-        category = Category.find_by_id(params[:id])
-        render json: category, status: :ok
+    # Render the PRODUCTS from this category
+    def show 
+        products = Product.where(:category_id => params[:id])
+        render json: products, status: :ok
     end
 
     private 
