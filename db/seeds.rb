@@ -39,7 +39,7 @@ Product.create!([
         price: 3,
         description: "phases",
         image_url: "google.com",
-        stock: 4
+        stock: 40
     },
     {
         category_id: 1,
@@ -47,7 +47,7 @@ Product.create!([
         price: 10,
         description: "Giant headed Picard",
         image_url: "google.com",
-        stock: 2
+        stock: 20
     },
     {
         category_id: 2,
@@ -55,7 +55,7 @@ Product.create!([
         price: 5000,
         description: "gorgeous",
         image_url: "birchmerch.com",
-        stock: 0
+        stock: 5
     }
 ])
 
